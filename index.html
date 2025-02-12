@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+        body {
+            font-family: 'Great Vibes', cursive;
+            background-color: #ffe6e6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ff0066;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #ff4d4d;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #ff0066;
+        }
+
+        .heart {
+            font-size: 2rem;
+            color: #ff0066;
+            animation: heart-float 1s infinite;
+        }
+
+        @keyframes heart-float {
+            0% {transform: translateY(0);}
+            50% {transform: translateY(-10px);}
+            100% {transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Valentine's Day</h1>
+        <p>Conform cerințelor în vigoare și a normelor societății, am luat la cunoștință faptul că este frumos să întrebi o asemenea fată superbă dacă dorește să fie Valentine-ul tău. Desigur, nu o oblig, că nu e frumos, că după nu mai are farmec. Adică depinde și de tine, dacă dorești, acum stai un pic să trec pe engleză că nu știu cum se zice în română, to be my Valentine? Ai o alegere grea de făcut deci ai grijă!</p>
+        <button onclick="accept()">Creca da boss</button>
+        <button onclick="reject()">Nah bro pass</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
